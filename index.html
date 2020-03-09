@@ -1,54 +1,80 @@
 <html>
 
-<head>
-  <title>Sandbox</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-</head>
+  <head>
+    <title>Sandbox</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  </head>
 
-<body>
-  <div class="navbar">
-    <div class="container">
-      <div class="left-content">
-        <a href="#default" id="logo">Djangos Khan</a>
-        <a href="#mywork">My Work</a>
-        <a href="#about">About me</a>
-      </div>
-      <div class="right-content">
-        <a href="#linkedin">LinkedIn</a>
-        <a href="#github">Github</a>
-        <div class="burger">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="main">
-    <div class="banner">
+  <body>
+    <div class="navbar">
       <div class="container">
-        <div class="banner-title">
-          <h1>Title</h1>
-          <p>Intro</p>
+        <div class="left-content">
+          <a href="#default" id="logo">Djangos Khan</a>
+          <a href="#mywork">My Work</a>
+          <a href="#about">About me</a>
+        </div>
+        <div class="right-content">
+          <a href="#linkedin">LinkedIn</a>
+          <a href="#github">Github</a>
+          <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
         </div>
       </div>
     </div>
-
-    <div class="container">
-      <div id="content">
-        <button id="mybtn">Open modal</button>
+    <div class="main">
+      <div class="banner">
+        <div class="container">
+          <div class="banner-title">
+            <h1>Title</h1>
+            <p>Intro</p>
+          </div>
+        </div>
       </div>
-    </div>
 
-
-
-    <div id="myModal" class="modal">
-      <div class="modalbox">
+      <div class="modal-window">
+        <div class="container">
+          <button id="mybtn">Open modal</button>
+        </div>
       </div>
+
+      <div class="work1">
+        <div class="container">
+          <div class="workimg1"></div>
+          <div class="work1content">
+            <h2 class="work-title">Lorem Ipsum</h2>
+            <p class="work-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+              Nam et velit quis libero varius dapibus vel et nunc. 
+              Nulla eu dui id est vestibulum lobortis nec ac erat.
+            </p>
+            <h3>Tech</h3>
+            <ul> 
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="work2">
+        <div class="container">
+          <div class="workimg2"></div>
+          <div class="work2content"></div>
+        </div>
+      </div>
+
+      <div id="myModal" class="modal">
+        <div class="modalbox">
+        </div>
+      </div>
+
     </div>
-  </div>
-  <script src="script/app.js"></script>
-</body>
+    <script src="script/app.js"></script>
+  </body>
 
 </html>

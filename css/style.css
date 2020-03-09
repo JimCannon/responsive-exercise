@@ -1,16 +1,10 @@
-.html{
+html, body{
   width: 100%; 
   height: 100%;
   margin: 0; 
   padding: 0;
 }
 
-body { 
-  width: 100%; 
-  height: 100%; 
-  margin: 0; 
-  padding: 0; 
-}
 
 
 .main {
@@ -134,7 +128,57 @@ body {
   transform: translateY(-50%);
 }
 
+/*======== WORK 1 ========*/
+
+.work1  {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-color: burlywood;
+  
+}
+
+.work-title {
+  
+  margin-top: 0px;
+}
+
+.workimg1 {
+  width: 600px;
+  height: 400px;
+  background-image: url(../img/navision.jpg);
+  background-size: contain;
+  display: inline-block;
+  float: left;
+}
+
+.work1content {
+  width: 500px;
+  height: 400px;
+  display: inline-block;
+  float: right;
+  color: #000;
+  margin-top: 20px;
+}
+
+.work1content ul
+
+/*======== WORK 2 ========*/
+
+.work2  {
+  width: 100%;
+  height: 400px;
+  background-color: crimson;
+}
+
 /*======== MODAL ========*/
+
+.modal-window {
+  width: 100%;
+  height: 400px;
+  background-color: aquamarine;
+}
+
 .modal {
   display: none;
   position: fixed;

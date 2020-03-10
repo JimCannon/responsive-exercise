@@ -16,7 +16,6 @@
   float: right;
 }
 
-
 .navbar a {
   color: #eee;
 	text-decoration: none;
@@ -58,8 +57,13 @@
     position: absolute;
     width: 200px;
     background-color: #eee;
-    left: 0;
+		left: -200px;
+		transition: left ease-out 300ms;
 	}
+
+	.navbar.active .content {
+    left: 0;
+  }
 
 	.navbar .content.left {
     top: 49px;

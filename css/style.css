@@ -24,6 +24,36 @@
 
 /*======== WORK 1 ========*/
 
+.work {
+  padding: 60px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.work .image-container {
+  width: 60%;
+}
+
+.work .content {
+  width: 40%;
+}
+
+.work.swissclinic .image-container {
+  float: left;
+}
+
+.work.swissclinic .content {
+  float: right;
+}
+
+.work.navision .image-container {
+  float: right;
+}
+
+.work.navision .content {
+  float: left;
+}
+
+
 .work1  {
   position: relative;
   width: 100%;
@@ -34,15 +64,6 @@
 
 .work-title {
   margin-top: 0px;
-}
-
-.workimg1 {
-  width: 750px;
-  height: 400px;
-  background-image: url(../img/navision.jpg);
-  background-size: contain;
-  display: inline-block;
-  float: left;
 }
 
 .work1content {

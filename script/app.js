@@ -1,36 +1,26 @@
-let modal = document.getElementById("myModal");
-let btn = document.getElementById("mybtn");
-// btn.onclick = function () {
-//   modal.style.display = "block";
-// }
+$(document).ready(function() {
+  $('#mybtn').click(function() {
+    // Toggles the css "display: block" and "display: none" when the button #mybtn is clicked
+    $('#myModal').toggle();
+  });
 
-btn.onclick = () => {
-  modal.style.display = "block";
-}
+  $('.burger').click(function() {
+    $('.navbar').toggleClass('active');
+  });
 
-// window.onclick = function (event) {
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-//   }
-// }
+  $(window).click(function(e) {
+    // If the clicked element is not the burger nor the navbar itself
+    if (!$(e.target).closest('.burger').length && !$(e.target).closest('.navbar').length) {
+      // If the navbar has the class active
+      if ($('.navbar').hasClass('active')) {
+        $('.navbar').removeClass('active');
+      }
+    }
 
-window.onclick = (event) => {
-  if(event.target == modal) {
-    modal.style.display = "none";
-  } 
-}
-
-/*
-window.onscroll = function () {
-  scrollFunction()
-};
-function scrollFunction(){
-  if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80){
-    document.getElementById("navbar").style.padding = "30px 10px";
-    document.getElementById("logo").style.fontSize = "25px";
-  } else {
-    document.getElementById("navbar").style.padding = "80px 10px";
-    document.getElementById("logo").style.fontSize = "30px";
-  }
-}
-*/
+    // If modal is vislbe and clicked element is not the modal button nor the modal itself
+    if ($('#myModal:visible') && !$(e.target).closest('#mybtn').length && !$(e.target).closest('.modalbox').length) {
+      // Adds the css "display: none"
+      $('#myModal').hide();
+    }
+  });
+});

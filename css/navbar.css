@@ -30,7 +30,7 @@
 	margin-right: -15px;
 }
 
-.navbar #logo {
+.navbar .container .navbar-inner .logo {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -86,5 +86,15 @@
     display: block;
     float: left;
     padding: 15px;
+	}
+
+	.navbar .container .navbar-inner .logo {
+		display: block;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		text-align: center;
+	}
+	.navbar .container .navbar-inner .logo a{
+		color: #eee;
 	}
 }

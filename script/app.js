@@ -1,14 +1,14 @@
-$(document).ready(function() {
-  $('#mybtn').click(function() {
+$(document).ready(function () {
+  $('#mybtn').click(function () {
     // Toggles the css "display: block" and "display: none" when the button #mybtn is clicked
     $('#myModal').toggle();
   });
 
-  $('.burger').click(function() {
+  $('.burger').click(function () {
     $('.navbar').toggleClass('active');
   });
 
-  $(window).click(function(e) {
+  $(window).click(function (e) {
     // If the clicked element is not the burger nor the navbar itself
     if (!$(e.target).closest('.burger').length && !$(e.target).closest('.navbar').length) {
       // If the navbar has the class active
@@ -23,4 +23,30 @@ $(document).ready(function() {
       $('#myModal').hide();
     }
   });
+
+
+  var lastScrollTop = 0;
+  $('body').scroll(function (event) {
+    var st = $(this).scrollTop();
+    if (st > lastScrollTop) {
+      // downscroll code
+      //console.log('wololo')
+      $('.navbar').addClass('expand');
+    } else {
+      // upscroll code
+      //console.log('heyooo')
+      $('.navbar').removeClass('expand');
+    }
+    lastScrollTop = st;
+  });
+
+  // $('body').scroll(e => {
+  //   var offsetTop = $(e.target).scrollTop();
+
+  //   if (offsetTop > 100) {
+  //     //$('.navbar').addClass('expand');
+  //     console.log('hej')
+  //   }
+  // });
+
 });

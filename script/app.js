@@ -28,7 +28,9 @@ $(document).ready(function () {
   var lastScrollTop = 0;
   $('body').scroll(function (event) {
     var st = $(this).scrollTop();
-    if (st > lastScrollTop) {
+    // console.log($(this).scrollTop());
+    // if (st > lastScrollTop) {
+      if (st > 40) {
       // downscroll code
       //console.log('wololo')
       $('.navbar').addClass('expand');
@@ -39,14 +41,5 @@ $(document).ready(function () {
     }
     lastScrollTop = st;
   });
-
-  // $('body').scroll(e => {
-  //   var offsetTop = $(e.target).scrollTop();
-
-  //   if (offsetTop > 100) {
-  //     //$('.navbar').addClass('expand');
-  //     console.log('hej')
-  //   }
-  // });
 
 });

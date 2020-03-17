@@ -73,7 +73,18 @@
 
 	.navbar.active .content {
     left: 0;
-  }
+	}
+	
+	.navbar-overlay.active {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		background-color: black;
+		opacity: 0.6;
+		transition: all 300ms ease-out;
+	}
 
 	.navbar .content.left {
     top: 49px;
@@ -183,3 +194,6 @@ a:hover:after {
   width: 100%; 
   left: 0; 
 }
+
+
+

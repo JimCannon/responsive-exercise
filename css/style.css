@@ -2,7 +2,7 @@
 
 .banner {
   width: 100%;
-  height: 400px;
+  height: 450px;
   background-image: url(../img/raggie.jpg);
   background-size: cover;
   color: #eee;
@@ -73,65 +73,6 @@
   }
 }
 
-/*======== WORK 1 ========*/
-/*
-
-.work1  {
-  position: relative;
-  width: 100%;
-  height: 400px;
-  background-color: white;
-  
-}
-
-.work1content {
-  width: 400px;
-  height: 400px;
-  display: inline-block;
-  float: right;
-  color: #000;
-  margin-top: 20px;
-  padding-left: 10px;
-}
-
-.work1content ul{
-  padding-inline-start: 20px;
-}
-
-.work1content h3{
-  position: relative;
-  top: 10px;
-}
-
-@media screen and (max-width: 1200px){
-  .work1 {
-    height: 750px;
-    align-items: center;
-    
-  }
-}
-*/
-
-/*======== WORK 2 ========*/
-/*
-.work2 {
-  position: relative;
-  width: 100%;
-  height: 400px;
-  background-color: crimson;
-}
-
-
-.work2content {
-  width: 500px;
-  height: 400px;
-  display: inline-block;
-  float: right;
-  color: #000;
-  margin-top: 20px;
-}
-*/
-
 /*======== MODAL ========*/
 
 .modal-window {
@@ -165,4 +106,30 @@
 
 #mybtn {
   position: relative;
+}
+
+#back2Top {
+  width: 40px;
+  line-height: 40px;
+  overflow: hidden;
+  z-index: 999;
+  display: inline-block;
+  cursor: pointer;
+  -moz-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  position: fixed;
+  bottom: 50px;
+  right: 0;
+  background-color: #DDD;
+  color: #555;
+  text-align: center;
+  font-size: 30px;
+  text-decoration: none;
+}
+#back2Top:hover {
+  background-color: #DDF;
+  color: #000;
 }

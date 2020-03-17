@@ -6,6 +6,7 @@ $(document).ready(function () {
 
   $('.burger').click(function () {
     $('.navbar').toggleClass('active');
+    $('.navbar-overlay').toggleClass('active');
   });
 
   $(window).click(function (e) {
@@ -14,6 +15,9 @@ $(document).ready(function () {
       // If the navbar has the class active
       if ($('.navbar').hasClass('active')) {
         $('.navbar').removeClass('active');
+      }
+      if ($('.navbar-overlay').hasClass('active')) {
+        $('.navbar-overlay').removeClass('active');
       }
     }
 

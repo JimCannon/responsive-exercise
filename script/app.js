@@ -55,10 +55,16 @@ $(document).ready(function () {
     lastScrollTop = st;
   });
 
-
-  //Scroll back to top button
-  $('.backtop').click(function () {
-    // document.documentElement.scrollTop = 0;
-    $('body').animate({ scrollTop: 0 }, "slow");
+  $('.topbtn').click(function(){
+    $('html, body').animate({scrollTop : 0}, 00);
   });
+
+  $('body').scroll(function(){
+    if($(this).scrollTop() > 100){
+      $('.topbtn').fadeIn();
+    } else {
+      $('.topbtn').fadeOut();
+    }
+  });
+
 });

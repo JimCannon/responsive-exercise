@@ -42,19 +42,6 @@ $(document).ready(function () {
     lastScrollTop = st;
   });
 
-  $('body').scroll(function (event) {
-    var st = $(this).scrollTop();
-    // if (st > lastScrollTop) {
-    if (st > 200) {
-      // downscroll code
-      $('.backtop').addClass('show');
-    } else {
-      // upscroll code
-      $('.backtop').removeClass('show');
-    }
-    lastScrollTop = st;
-  });
-
   $('.topbtn').click(function(){
     $('html, body').animate({scrollTop : 0}, 00);
   });

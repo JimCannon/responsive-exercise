@@ -32,7 +32,7 @@ $(document).ready(function () {
   $('body').scroll(function (event) {
     var st = $(this).scrollTop();
     // if (st > lastScrollTop) {
-      if (st > 40) {
+    if (st > 40) {
       // downscroll code
       $('.navbar').addClass('expand');
     } else {
@@ -40,5 +40,25 @@ $(document).ready(function () {
       $('.navbar').removeClass('expand');
     }
     lastScrollTop = st;
+  });
+
+  $('body').scroll(function (event) {
+    var st = $(this).scrollTop();
+    // if (st > lastScrollTop) {
+    if (st > 200) {
+      // downscroll code
+      $('.backtop').addClass('show');
+    } else {
+      // upscroll code
+      $('.backtop').removeClass('show');
+    }
+    lastScrollTop = st;
+  });
+
+
+  //Scroll back to top button
+  $('.backtop').click(function () {
+    // document.documentElement.scrollTop = 0;
+    $('body').animate({ scrollTop: 0 }, "slow");
   });
 });

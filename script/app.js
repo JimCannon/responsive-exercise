@@ -43,7 +43,7 @@ $(document).ready(function () {
   });
 
   $('.topbtn').click(function(){
-    $('html, body').animate({scrollTop : 0}, 00);
+    $('html, body').animate({scrollTop : 0}, 0);
   });
 
   $('body').scroll(function(){

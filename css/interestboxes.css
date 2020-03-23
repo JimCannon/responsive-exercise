@@ -1,0 +1,168 @@
+.container.interestboxes {
+  width: 100%;
+  height: 200px;
+  background-color: white;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+/* GAMING */
+
+.container.interestboxes .gaming {
+  position: relative;
+  width: 20%;
+  height: 200px;
+  display: inline-block;
+  float: left;
+  margin-right: 25px;
+  margin-left: 20px;
+  transition: all 300ms ease-out;
+}
+
+.container.interestboxes .gaming:hover {
+  background-color: white;
+  transform: scale(1.1);
+  transition: all 300ms ease-out;
+}
+
+.container.container.interestboxes .gaming .gamingimg {
+  color: black;
+  font-size: 100px;
+  width: 50px;
+  height: 50px;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  position: relative;
+  right: 5px;
+}
+
+.container.container.interestboxes .gaming .gaminginfo{
+  text-align: center;
+  color: black;
+  width: 100%;
+  height: 100px;
+}
+
+/* BASS */
+
+.container.interestboxes .bass {
+  position: relative;
+  width: 20%;
+  height: 200px;
+  display: inline-block;
+  float: left;
+  margin-left: 20px;
+  margin-right: 25px;
+  transition: all 300ms ease-out;
+}
+
+.container.interestboxes .bass:hover {
+  background-color: white;
+  transform: scale(1.1);
+  transition: all 300ms ease-out;
+}
+
+.container.container.interestboxes .bass .bassimg {
+  color: black;
+  font-size: 100px;
+  width: 50px;
+  height: 50px;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  position: relative;
+  right: 5px;
+}
+
+.container.container.interestboxes .bass .bassinfo{
+  text-align: center;
+  color: black;
+  width: 100%;
+  height: 100px;
+}
+
+/* SPOTIFY */
+
+.container.interestboxes .spotify {
+  position: relative;
+  width: 20%;
+  height: 200px;
+  display: inline-block;
+  float: right;
+  margin-right: 20px;
+  margin-left: 25px;
+  transition: all 300ms ease-out;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+  0 2px 4px rgba(0,0,0,0.07), 
+  0 4px 8px rgba(0,0,0,0.07), 
+  0 8px 16px rgba(0,0,0,0.07),
+  0 16px 32px rgba(0,0,0,0.07), 
+  0 32px 64px rgba(0,0,0,0.07);
+}
+
+.container.interestboxes .spotify:hover {
+  background-color: white;
+  transform: scale(1.1);
+  transition: all 300ms ease-out;
+
+}
+
+.container.container.interestboxes .spotify .spotifyimg {
+  color: black;
+  font-size: 50px;
+  width: 50px;
+  height: 50px;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  position: relative;
+  top: 30px;
+}
+
+.container.container.interestboxes .spotify .spotifyinfo{
+  text-align: center;
+  color: black;
+  width: 100%;
+  height: 100px;
+}
+
+/* SKATE */
+
+.container.interestboxes .skate {
+  position: relative;
+  width: 20%;
+  height: 200px;
+  /* background-color: green; */
+  display: inline-block;
+  float: right;
+  margin-right: 20px;
+  margin-left: 25px;
+  transition: all 300ms ease-out;
+}
+
+.container.interestboxes .skate:hover {
+  background-color: white;
+  transform: scale(1.1);
+  transition: all 300ms ease-out;
+}
+
+.container.container.interestboxes .skate .skateimg {
+  /* background-image: url(../img/raggie.jpg); */
+  color: black;
+  font-size: 50px;
+  width: 50px;
+  height: 50px;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  position: relative;
+  top: 30px;
+}
+
+.container.container.interestboxes .skate .skateinfo{
+  text-align: center;
+  color: black;
+  width: 100%;
+  height: 100px;
+}

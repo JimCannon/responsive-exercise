@@ -1,8 +1,25 @@
 $(document).ready(function () {
-  $('#mybtn').click(function () {
-    // Toggles the css "display: block" and "display: none" when the button #mybtn is clicked
-    $('#myModal').toggle();
+  // $('#mybtn').click(function () {
+  //   // Toggles the css "display: block" and "display: none" when the button #mybtn is clicked
+  //   $('#myModal').toggle();
+  // });
+
+  // var modalId = $(this).data('modal');
+
+  $(document).ready(function () {
+    $('.interest-box').click(function () {
+      var modalId = $(this).data('modal');
+      console.log(modalId);
+      $(modalId).toggle();
+    });
   });
+
+
+  // $('.interest-box-inner').click(function () {
+    // Toggles the css "display: block" and "display: none" when the button #mybtn is clicked
+    // $('.modal').toggle();
+    // $(modalId).show();
+  // });
 
   $('.burger').click(function () {
     $('.navbar').toggleClass('active');
@@ -22,11 +39,17 @@ $(document).ready(function () {
     }
 
     // If modal is vislbe and clicked element is not the modal button nor the modal itself
-    if ($('#myModal:visible') && !$(e.target).closest('#mybtn').length && !$(e.target).closest('.modalbox').length) {
+    if ($('.modal:visible') && !$(e.target).closest('.container.interest-boxes').length && !$(e.target).closest('.modalbox').length) {
       // Adds the css "display: none"
-      $('#myModal').hide();
+      $('.modal').hide();
     }
   });
+
+  /* MODAL */
+
+
+
+  /* SCROLL */
 
   var lastScrollTop = 0;
   $('body').scroll(function (event) {
@@ -42,12 +65,12 @@ $(document).ready(function () {
     lastScrollTop = st;
   });
 
-  $('.topbtn').click(function(){
-    $('html, body').animate({scrollTop : 0}, 0);
+  $('.topbtn').click(function () {
+    $('html, body').animate({ scrollTop: 0 }, 0);
   });
 
-  $('body').scroll(function(){
-    if($(this).scrollTop() > 100){
+  $('body').scroll(function () {
+    if ($(this).scrollTop() > 100) {
       $('.topbtn').fadeIn();
     } else {
       $('.topbtn').fadeOut();

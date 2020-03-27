@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="css/interestboxes.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/modal.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/all.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -102,7 +103,7 @@
     </section>
 
     <div class="container interest-boxes">
-      <div class="interest-box gaming">
+      <div class="interest-box gaming" data-modal="#modal1">
         <div class="interest-box-inner">
           <div class="gamingimg"><i class="fas fa-gamepad"></i></div>
           <div class="gaminginfo">
@@ -110,7 +111,7 @@
           </div>
         </div>
       </div>
-      <div class="interest-box bass">
+      <div class="interest-box bass" data-modal="#modal2">
         <div class="interest-box-inner">
           <div class="bassimg"><i class="fas fa-guitar"></i></div>
           <div class="bassinfo">
@@ -118,7 +119,7 @@
           </div>
         </div>
       </div>
-      <div class="interest-box skate">
+      <div class="interest-box skate" data-modal="#modal3">
         <div class="interest-box-inner">
           <div class="skateimg"><i class="fas fa-id-card"></i></div>
           <div class="skateinfo">
@@ -126,7 +127,7 @@
           </div>
         </div>
       </div>
-      <div class="interest-box spotify">
+      <div class="interest-box spotify" data-modal="#modal4">
         <div class="interest-box-inner">
           <div class="spotifyimg"><i class="fab fa-spotify"></i></div>
           <div class="spotifyinfo">
@@ -136,8 +137,6 @@
       </div>
     </div>
 
-
-    <!-- <a class="backtop" title="Back to top" href="#">&#10148;</a> -->
     <button class="topbtn"><i class="fas fa-chevron-up"></i></button>
 
     <div class="footer">
@@ -151,15 +150,38 @@
           <button id="mybtn">Open modal</button>
         </div>
       </div>
-
-      <div id="myModal" class="modal">
+      
+    </div>-->
+      <div id="modal1" class="modal">
         <div class="modalbox">
+          <h1>Hej 1!</h1>
+        </div>
+      </div>
+      
+      <div id="modal2" class="modal">
+        <div class="modalbox">
+          <h1>Hej 2!</h1>
         </div>
       </div>
 
-    </div>-->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <div id="modal3" class="modal">
+        <div class="modalbox">
+          <h1>Hej 3!</h1>
+        </div>
+      </div>
+
+      <div id="modal4" class="modal">
+        <div class="modalbox">
+          <h1>Hej 4!</h1>
+          <iframe id="spotifyplaylist" src="https://open.spotify.com/embed/playlist/5N0MW0AkjYBKwvnGazbt6t" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+      </div>
+
+    <script 
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" 
+      crossorigin="anonymous">
+    </script>
     <script src="script/app.js"></script>
 </body>
 

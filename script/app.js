@@ -6,14 +6,11 @@ $(document).ready(function () {
 
   // var modalId = $(this).data('modal');
 
-  $(document).ready(function () {
-    $('.interest-box').click(function () {
-      var modalId = $(this).data('modal');
-      console.log(modalId);
-      $(modalId).toggle();
-    });
+  $('.interest-box').click(function () {
+    var modalId = $(this).data('modal');
+    console.log(modalId);
+    $(modalId).toggle();
   });
-
 
   // $('.interest-box-inner').click(function () {
     // Toggles the css "display: block" and "display: none" when the button #mybtn is clicked
@@ -45,14 +42,22 @@ $(document).ready(function () {
     }
   });
 
-  /* MODAL */
+  /* WAYPOINTS */
 
-
+  $('.animate').each(function() {
+    $(this).waypoint({
+      offset: '80%',
+      handler: () => {
+        const animateClass = $(this).data('animate');
+        $(this).addClass('animated').addClass(animateClass);
+      }
+    });
+  });
 
   /* SCROLL */
 
   var lastScrollTop = 0;
-  $('body').scroll(function (event) {
+  $(window).scroll(function (event) {
     var st = $(this).scrollTop();
     // if (st > lastScrollTop) {
     if (st > 40) {

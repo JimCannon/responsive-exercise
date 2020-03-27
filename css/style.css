@@ -42,6 +42,10 @@
   width: 60%;
 }
 
+.work .image-container .animate {
+  opacity: 0;
+}
+
 .work .content {
   width: 40%;
 }

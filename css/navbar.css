@@ -166,7 +166,7 @@
 	}	
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 768px) {
 	.navbar.expand {
 		transition: all 300ms ease-out;
 		height: 35px;
@@ -179,22 +179,20 @@
 	}
 }
 
-a:after {    
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 50%;
-  /* position: absolute; */
-  background: #fff;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
+@media only screen and (min-width: 768px) {
+	a:after {
+		content: "";
+		display: block;
+		height: 2px;
+		background-color: #fff;
+		width: 0;
+		left: 50%;
+		position: relative;
+		transition: all .3s ease-out;
+	}
+
+	a:hover:after {
+		width: 100%;
+		left: 0;
+	}
 }
-a:hover:after { 
-  width: 100%; 
-  left: 0; 
-}
-
-
-

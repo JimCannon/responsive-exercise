@@ -1,10 +1,4 @@
 $(document).ready(function () {
-  // $('#mybtn').click(function () {
-  //   // Toggles the css "display: block" and "display: none" when the button #mybtn is clicked
-  //   $('#myModal').toggle();
-  // });
-
-  // var modalId = $(this).data('modal');
 
   $('.interest-box').click(function () {
     var modalId = $(this).data('modal');
@@ -12,11 +6,6 @@ $(document).ready(function () {
     $(modalId).toggle();
   });
 
-  // $('.interest-box-inner').click(function () {
-    // Toggles the css "display: block" and "display: none" when the button #mybtn is clicked
-    // $('.modal').toggle();
-    // $(modalId).show();
-  // });
 
   $('.burger').click(function () {
     $('.navbar').toggleClass('active');
